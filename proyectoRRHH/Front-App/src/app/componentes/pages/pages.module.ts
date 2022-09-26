@@ -19,6 +19,9 @@ import { EditModuloComponent } from './usuarios/modulos/edit-modulo/edit-modulo.
 import { EditPermisosComponent } from './usuarios/rol-usuario/edit-permisos/edit-permisos.component';
 import { PuestosComponent } from './puestos/puestos.component';
 import { CalificacionesComponent } from './calificaciones/calificaciones.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { PieChartsComponent } from './informes/pie-charts/pie-charts.component';
+
 
 
 
@@ -40,12 +43,15 @@ import { CalificacionesComponent } from './calificaciones/calificaciones.compone
     EditModuloComponent,
     EditPermisosComponent,
     PuestosComponent,
-    CalificacionesComponent
+    CalificacionesComponent,
+    PieChartsComponent,
+    
   ],
   imports: [
     CommonModule,
     RouterModule,
-    SharedModule
+    SharedModule,
+    NgxChartsModule
   ],
   exports: [
     DashboardComponent,

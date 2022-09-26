@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { NopageFoundComponent } from './componentes/nopage-found/nopage-found.component';
 import { AuthModule } from './componentes/auth/auth.module';
 import { PagesModule } from './componentes/pages/pages.module';
-
+import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,8 @@ import { PagesModule } from './componentes/pages/pages.module';
     BrowserModule,
     AppRoutingModule,
     AuthModule,
-    PagesModule
+    PagesModule,
+    NgxChartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
