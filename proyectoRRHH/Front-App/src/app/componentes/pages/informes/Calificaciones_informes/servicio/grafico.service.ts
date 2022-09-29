@@ -57,93 +57,93 @@ export class GraficoService {
 */
 export var productSales = [
   {
-    "name": "book",
-    "value": 5001
+    "name": "Administracion",
+    "value": 15
   }, {
-    "name": "graphic card",
-    "value": 7322
+    "name": "Mantenimiento",
+    "value": 80
   }, {
-    "name": "desk",
-    "value": 1726
+    "name": "Limpieza",
+    "value": 48
   }, {
-    "name": "laptop",
-    "value": 2599
+    "name": "Seguridad",
+    "value": 60
   }, {
-    "name": "monitor",
-    "value": 705
+    "name": "Gerencia",
+    "value": 30
   }
 ];
 
 
 export var productSalesMulti = [
   {
-    "name": "book",
+    "name": "Administracion",
     "series": [
       {
-        "name": "January",
-        "value": 125
+        "name": "Enero",
+        "value": 3
       }, {
-        "name": "February",
-        "value": 197
+        "name": "Febrero",
+        "value": 9
       }, {
-        "name": "March",
-        "value": 209
+        "name": "Marzo",
+        "value": 15
       }
     ]
   }, {
-    "name": "graphic card",
+    "name": "Mantenimiento",
     "series": [
       {
-        "name": "January",
-        "value": 210
+        "name": "Enero",
+        "value": 90
       }, {
-        "name": "February",
-        "value": 255
+        "name": "Febrero",
+        "value": 70
       }, {
-        "name": "March",
-        "value": 203
+        "name": "Marzo",
+        "value": 80
       }
     ]
   }, {
-    "name": "desk",
+    "name": "Limpieza",
     "series": [
       {
-        "name": "January",
-        "value": 89
+        "name": "Enero",
+        "value": 30
       }, {
-        "name": "February",
-        "value": 105
+        "name": "Febrero",
+        "value": 50
       }, {
-        "name": "March",
-        "value": 66
+        "name": "Marzo",
+        "value": 48
       }
     ]
   }, {
-    "name": "laptop",
+    "name": "Seguridad",
     "series": [
       {
-        "name": "January",
-        "value": 178
+        "name": "Enero",
+        "value": 20
       }, {
-        "name": "February",
-        "value": 165
+        "name": "Febrero",
+        "value": 42
       }, {
-        "name": "March",
-        "value": 144
+        "name": "Marzo",
+        "value": 60
       }
     ]
   }, {
-    "name": "monitor",
+    "name": "Gerencia",
     "series": [
       {
-        "name": "January",
-        "value": 144
+        "name": "Enero",
+        "value": 10
       }, {
-        "name": "February",
-        "value": 250
+        "name": "Febrero",
+        "value": 19
       }, {
-        "name": "March",
-        "value": 133
+        "name": "Marzo",
+        "value": 30
       }
     ]
   }

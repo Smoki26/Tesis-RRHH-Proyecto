@@ -18,8 +18,8 @@ export class BarChartsComponent implements OnInit {
   view: [number,number] = [700, 370];
 
   // options
-  legendTitle: string = 'Products';
-  legendTitleMulti: string = 'Months';
+  legendTitle: string = 'Empleados';
+  legendTitleMulti: string = 'Mes';
   //legendPosition: string = 'below'; // ['right', 'below']
   
   legend: boolean = true;
@@ -27,8 +27,8 @@ export class BarChartsComponent implements OnInit {
   xAxis: boolean = true;
   yAxis: boolean = true;
 
-  yAxisLabel: string = 'Sales';
-  xAxisLabel: string = 'Products';
+  yAxisLabel: string = 'Empleados';
+  xAxisLabel: string = 'Puestos';
   showXAxisLabel: boolean = true;
   showYAxisLabel: boolean = true;
 
@@ -39,7 +39,7 @@ export class BarChartsComponent implements OnInit {
   rotateXAxisTicks: boolean = false;
 
   xAxisTicks: any[] = ['Genre 1', 'Genre 2', 'Genre 3', 'Genre 4', 'Genre 5', 'Genre 6', 'Genre 7']
-  yAxisTicks: any[] = [100, 1000, 2000, 5000, 7000, 10000]
+  yAxisTicks: any[] = [30, 50, 70, 80, 150, 200]
 
   animations: boolean = true; // animations on load
 
