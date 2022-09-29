@@ -20,7 +20,11 @@ import { EditPermisosComponent } from './usuarios/rol-usuario/edit-permisos/edit
 import { PuestosComponent } from './puestos/puestos.component';
 import { CalificacionesComponent } from './calificaciones/calificaciones.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
-import { PieChartsComponent } from './informes/pie-charts/pie-charts.component';
+import { PieChartsComponent } from './informes/Calificaciones_informes/pie-charts/pie-charts.component';
+import { BarChartsComponent } from './informes/Calificaciones_informes/bar-charts/bar-charts.component';
+import { CalificacionInformeComponent } from './informes/Calificaciones_informes/calificacion-informe.component'; 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 
@@ -45,19 +49,23 @@ import { PieChartsComponent } from './informes/pie-charts/pie-charts.component';
     PuestosComponent,
     CalificacionesComponent,
     PieChartsComponent,
-    
+    BarChartsComponent,
+    CalificacionInformeComponent,
+  
+
   ],
   imports: [
     CommonModule,
     RouterModule,
     SharedModule,
-    NgxChartsModule
+    NgxChartsModule,
+    BrowserAnimationsModule,
   ],
   exports: [
     DashboardComponent,
     UsuariosComponent,
     PersonasComponent,
-    PuestosComponent
+    PuestosComponent,
   ]
 })
 export class PagesModule { }

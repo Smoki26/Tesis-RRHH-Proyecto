@@ -10,7 +10,9 @@ import { RolUsuarioComponent } from './usuarios/rol-usuario/rol-usuario.componen
 import { ModulosComponent } from './usuarios/modulos/modulos.component';
 import { PuestosComponent } from './puestos/puestos.component';
 import { CalificacionesComponent } from './calificaciones/calificaciones.component';
-import { PieChartsComponent } from './informes/pie-charts/pie-charts.component';
+import { CalificacionInformeComponent } from './informes/Calificaciones_informes/calificacion-informe.component';
+
+
 const routes: Routes = [
     { path: 'dashboard', component: PagesComponent ,
     children:[
@@ -27,10 +29,11 @@ const routes: Routes = [
         path:'calificaciones',component: CalificacionesComponent
       },
       {
-        path:'pie-charts',component: PieChartsComponent
-      }
+        path:'calificacion-informe',component: CalificacionInformeComponent
+    }
 
     ]
+    
   }
   
 

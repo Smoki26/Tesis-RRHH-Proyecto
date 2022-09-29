@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Color, ScaleType } from '@swimlane/ngx-charts';
-import { GraficoService } from './servicio/grafico.service';
+import { productSales,productSalesMulti  } from '../servicio/grafico.service'; 
+
 
 @Component({
   selector: 'app-pie-charts',
@@ -10,34 +11,30 @@ import { GraficoService } from './servicio/grafico.service';
 export class PieChartsComponent implements OnInit {
 
    
-  view: [number, number] = [900, 400];
+  productSales =[]
+  productSalesMulti =[]
+
+  view: [number,number] = [700, 370];
 
   // options
-  gradient: boolean = true;
   showLegend: boolean = true;
   showLabels: boolean = true;
-  isDoughnut: boolean = false;
 
-  
+  gradient: boolean = false;
+  isDoughnut: boolean = true;
+
+  legendPosition: string = 'below';
+
   colorScheme: Color = { 
-    domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA'],
+    domain: ['#704FC4', '#4B852C', '#B67A3D', '#5B6FC8', '#25706F'],
     group: ScaleType.Ordinal, 
     selectable: true, // => boolean (true / false)
     name: 'Customer Usage', 
 };
 
-  constructor(private graficoService: GraficoService) {}
-  
-  get single(){
-    return this.graficoService.personaData;
-  }
+  constructor() { Object.assign(this, { productSales, productSalesMulti }) }
 
-  randomize(){
-    this.graficoService.random();
-  }
-
-  onSelect(data: any): void {
-    console.log('Item clicked', JSON.parse(JSON.stringify(data)));
+  ngOnInit(): void {
   }
 
   onActivate(data: any): void {
@@ -47,7 +44,9 @@ export class PieChartsComponent implements OnInit {
   onDeactivate(data: any): void {
     console.log('Deactivate', JSON.parse(JSON.stringify(data)));
   }
-  ngOnInit(): void {
-  }
 
+  onSelect(data: any): void {
+    console.log('Item clicked', JSON.parse(JSON.stringify(data)));
+  }
+  
 }
