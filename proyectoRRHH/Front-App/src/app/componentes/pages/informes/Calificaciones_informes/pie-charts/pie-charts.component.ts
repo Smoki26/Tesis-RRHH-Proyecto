@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Color, ScaleType } from '@swimlane/ngx-charts';
 import { productSales,productSalesMulti  } from '../servicio/grafico.service'; 
-
+import { random } from '../servicio/grafico.service'; 
 
 @Component({
   selector: 'app-pie-charts',
@@ -32,8 +32,14 @@ export class PieChartsComponent implements OnInit {
     name: 'Customer Usage', 
 };
 
+/*randomize(){
+    random();
+    console.log(random()); 
+  }
+  */
+  
   constructor() { Object.assign(this, { productSales, productSalesMulti }) }
-
+  
   ngOnInit(): void {
   }
 

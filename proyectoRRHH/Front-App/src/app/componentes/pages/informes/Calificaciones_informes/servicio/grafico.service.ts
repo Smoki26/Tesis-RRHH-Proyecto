@@ -55,7 +55,7 @@ export class GraficoService {
  }
 } 
 */
-export var productSales = [
+export let productSales = [
   {
     "name": "Administracion",
     "value": 15
@@ -73,6 +73,8 @@ export var productSales = [
     "value": 30
   }
 ];
+ 
+ 
 
 
 export var productSalesMulti = [
@@ -246,3 +248,98 @@ export var bubbleData = [
 
 
 
+export function random():void{
+  productSales = [
+    {
+      "name": "Administracion",
+      "value": Math.random()*100
+    }, {
+      "name": "Mantenimiento",
+      "value": Math.random()*100
+    }, {
+      "name": "Limpieza",
+      "value": Math.random()*100
+    }, {
+      "name": "Seguridad",
+      "value": Math.random()*100
+    }, {
+      "name": "Gerencia",
+      "value": Math.random()*100
+    }
+  ];
+
+  productSalesMulti = [
+    {
+      "name": "Administracion",
+      "series": [
+        {
+          "name": "Enero",
+          "value": Math.random()*10
+        }, {
+          "name": "Febrero",
+          "value": Math.random()*10
+        }, {
+          "name": "Marzo",
+          "value": Math.random()*10
+        }
+      ]
+    }, {
+      "name": "Mantenimiento",
+      "series": [
+        {
+          "name": "Enero",
+          "value": Math.random()*10
+        }, {
+          "name": "Febrero",
+          "value": Math.random()*10
+        }, {
+          "name": "Marzo",
+          "value": Math.random()*10
+        }
+      ]
+    }, {
+      "name": "Limpieza",
+      "series": [
+        {
+          "name": "Enero",
+          "value": Math.random()*10
+        }, {
+          "name": "Febrero",
+          "value": Math.random()*10
+        }, {
+          "name": "Marzo",
+          "value": Math.random()*10
+        }
+      ]
+    }, {
+      "name": "Seguridad",
+      "series": [
+        {
+          "name": "Enero",
+          "value": Math.random()*10
+        }, {
+          "name": "Febrero",
+          "value": Math.random()*10
+        }, {
+          "name": "Marzo",
+          "value": Math.random()*10
+        }
+      ]
+    }, {
+      "name": "Gerencia",
+      "series": [
+        {
+          "name": "Enero",
+          "value": Math.random()*10
+        }, {
+          "name": "Febrero",
+          "value": Math.random()*10
+        }, {
+          "name": "Marzo",
+          "value": Math.random()*10
+        }
+      ]
+    }
+  ]
+  
+ }

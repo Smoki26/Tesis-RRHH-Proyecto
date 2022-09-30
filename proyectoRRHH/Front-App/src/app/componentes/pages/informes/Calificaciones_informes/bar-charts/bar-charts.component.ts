@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Color, ScaleType } from '@swimlane/ngx-charts';
 import { productSales,productSalesMulti } from '../servicio/grafico.service';
-
+import { random } from '../servicio/grafico.service';
 
 @Component({
   selector: 'app-bar-charts',
@@ -66,6 +66,10 @@ export class BarChartsComponent implements OnInit {
   roundEdges: boolean = false;
 
   constructor() { Object.assign(this, { productSales, productSalesMulti }); }
+
+  /*randomize(){
+    random();
+  }*/
 
   ngOnInit(): void {
   }
